@@ -1,0 +1,16 @@
+{
+  "name": "walmart-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "ASM",
+  "license": "MIT",
+  "dependencies": {
+    "cron": "^1.8.2",
+    "nodemailer": "^6.7.2",
+    "puppeteer-core": "^13.0.0"
+  }
+}
