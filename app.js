@@ -19,17 +19,17 @@ async function sendNotifications(){
     let transporter = nodemailer.createTransport({
         service: 'outlook',
         auth: {
-            user: 'ahmadmeselmani.2000@outlook.com',
-            pass: 'Ahmad@2000'
+            user: '', // Insert your email here
+            pass: '' // your email password
         }
     });
 
     let textToSend = 'Go get the playstation 5!';
-    let htmlText = `<a href=\"${rand_url}\">Walmart Fucking Drop :))</a>`;
+    let htmlText = `<a href=\"${rand_url}\">Walmart Drop :))</a>`;
 
     let info = await transporter.sendMail({
-        from: '"Walmart Monitor" <ahmadmeselmani.2000@outlook.com>',
-        to: 'blackent151@gmail.com',
+        from: '"Walmart Monitor" <your email>',
+        to: '', // Insert the reciever email
         subject: 'Playstation 5 is in stock',
         text: textToSend,
         html: htmlText
